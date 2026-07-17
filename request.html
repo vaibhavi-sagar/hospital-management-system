@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Food | FoodShare</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+
+<div class="logo">🍱 FoodShare</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li><a href="request.html" class="active">Request</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+</header>
+
+<section class="request">
+
+<h1>Request Food</h1>
+
+<p>
+Fill in the form below if you need food assistance.
+</p>
+
+<form id="requestForm">
+
+<input type="text"
+id="rname"
+placeholder="Full Name"
+required>
+
+<input type="tel"
+id="rphone"
+placeholder="Phone Number"
+required>
+
+<input type="email"
+id="remail"
+placeholder="Email Address"
+required>
+
+<input type="number"
+id="people"
+placeholder="Number of People"
+required>
+
+<select id="foodNeeded" required>
+
+<option value="">Food Required</option>
+
+<option>Cooked Food</option>
+<option>Packed Food</option>
+<option>Vegetarian</option>
+<option>Non-Vegetarian</option>
+
+</select>
+
+<textarea
+id="raddress"
+rows="4"
+placeholder="Delivery Address"
+required></textarea>
+
+<select id="urgency">
+
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+
+</select>
+
+<textarea
+id="rnotes"
+rows="4"
+placeholder="Additional Notes"></textarea>
+
+<button type="submit">
+Submit Request
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 FoodShare
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,613 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#2E8B57;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.nav-links a:hover{
+    color:yellow;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.4),
+    rgba(0,0,0,.4)),
+    url("https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1600");
+    background-size:cover;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px;
+}
+
+.btn{
+    background:#ff9800;
+    padding:15px 35px;
+    text-decoration:none;
+    color:white;
+    border-radius:30px;
+    font-size:20px;
+}
+
+.btn:hover{
+    background:#e68900;
+}
+
+/* Features */
+
+.features{
+    padding:70px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.card i{
+    font-size:55px;
+    color:#2E8B57;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+    background:#2E8B57;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+/* ---------------- ABOUT PAGE ---------------- */
+
+.about{
+
+padding:70px 10%;
+
+text-align:center;
+
+background:#f8f9fa;
+
+}
+
+.about h1{
+
+font-size:48px;
+
+color:#2E8B57;
+
+margin-bottom:20px;
+
+}
+
+.about-text{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:19px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:60px;
+
+}
+
+.about-container{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.about-card{
+
+background:white;
+
+width:320px;
+
+padding:35px;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+transition:.3s;
+
+}
+
+.about-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.about-card i{
+
+font-size:60px;
+
+color:#2E8B57;
+
+margin-bottom:20px;
+
+}
+
+.about-card h2{
+
+margin-bottom:15px;
+
+}
+
+.about-card p{
+
+line-height:1.7;
+
+color:#555;
+
+}
+
+/* Active menu */
+
+.active{
+
+color:#FFD700 !important;
+
+font-weight:bold;
+
+}
+
+/* DONATE PAGE */
+
+.donate{
+    padding:70px 10%;
+    text-align:center;
+}
+
+.donate h1{
+    font-size:45px;
+    color:#2E8B57;
+    margin-bottom:15px;
+}
+
+.donate p{
+    margin-bottom:40px;
+    color:#555;
+}
+
+#donationForm{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+#donationForm input,
+#donationForm textarea,
+#donationForm select{
+
+    padding:15px;
+    font-size:17px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+#donationForm input:focus,
+#donationForm textarea:focus,
+#donationForm select:focus{
+
+    outline:none;
+    border:2px solid #2E8B57;
+}
+
+#donationForm button{
+
+    padding:15px;
+    background:#2E8B57;
+    color:white;
+    border:none;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#donationForm button:hover{
+
+    background:#236b44;
+}
+
+/* REQUEST PAGE */
+
+.request{
+
+padding:70px 10%;
+
+text-align:center;
+
+}
+
+.request h1{
+
+font-size:45px;
+
+color:#2E8B57;
+
+margin-bottom:15px;
+
+}
+
+.request p{
+
+margin-bottom:35px;
+
+}
+
+#requestForm{
+
+max-width:700px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+#requestForm input,
+#requestForm textarea,
+#requestForm select{
+
+padding:15px;
+
+font-size:17px;
+
+border:1px solid #ccc;
+
+border-radius:10px;
+
+}
+
+#requestForm button{
+
+padding:15px;
+
+font-size:18px;
+
+background:#2E8B57;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+#requestForm button:hover{
+
+background:#236b44;
+
+}
+
+/* CONTACT PAGE */
+
+.contact{
+
+padding:70px 10%;
+
+text-align:center;
+
+}
+
+.contact h1{
+
+font-size:45px;
+
+color:#2E8B57;
+
+margin-bottom:15px;
+
+}
+
+.contact-container{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:40px;
+
+margin-top:40px;
+
+flex-wrap:wrap;
+
+}
+
+.contact-info{
+
+flex:1;
+
+text-align:left;
+
+}
+
+.contact-info h2{
+
+margin-bottom:20px;
+
+}
+
+.contact-info p{
+
+font-size:18px;
+
+margin:15px 0;
+
+}
+
+.contact-info i{
+
+color:#2E8B57;
+
+margin-right:10px;
+
+}
+
+.social-icons{
+
+margin-top:25px;
+
+}
+
+.social-icons a{
+
+font-size:28px;
+
+margin-right:15px;
+
+color:#2E8B57;
+
+text-decoration:none;
+
+}
+
+.social-icons a:hover{
+
+color:#ff9800;
+
+}
+
+#contactForm{
+
+flex:1;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+#contactForm input,
+#contactForm textarea{
+
+padding:15px;
+
+font-size:17px;
+
+border:1px solid #ccc;
+
+border-radius:10px;
+
+}
+
+#contactForm button{
+
+padding:15px;
+
+font-size:18px;
+
+background:#2E8B57;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+#contactForm button:hover{
+
+background:#236b44;
+
+}
+
+/* DASHBOARD */
+
+.dashboard{
+
+padding:70px;
+
+}
+
+.dashboard h1{
+
+text-align:center;
+
+font-size:42px;
+
+color:#2E8B57;
+
+margin-bottom:40px;
+
+}
+
+.dashboard-card{
+
+width:250px;
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+text-align:center;
+
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+.dashboard-card i{
+
+font-size:50px;
+
+color:#2E8B57;
+
+margin-bottom:20px;
+
+}
+
+.dashboard-card h2{
+
+font-size:38px;
+
+}
+
+table{
+
+width:100%;
+
+margin-top:20px;
+
+border-collapse:collapse;
+
+background:white;
+
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+table th{
+
+background:#2E8B57;
+
+color:white;
+
+padding:15px;
+
+}
+
+table td{
+
+padding:15px;
+
+text-align:center;
+
+border-bottom:1px solid #ddd;
+
+}
+
+table button{
+
+    background:red;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+table button:hover{
+
+    background:darkred;
+
+}

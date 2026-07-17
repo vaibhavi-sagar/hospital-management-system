@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food | FoodShare</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">🍱 FoodShare</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="donate.html" class="active">Donate</a></li>
+            <li><a href="request.html">Request</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="donate">
+
+    <h1>Donate Food</h1>
+
+    <p>Fill out the form below to donate food to people in need.</p>
+
+    <form id="donationForm">
+
+        <input type="text" id="name" placeholder="Full Name" required>
+
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <input type="email" id="email" placeholder="Email Address" required>
+
+        <select id="foodType" required>
+            <option value="">Select Food Type</option>
+            <option>Cooked Food</option>
+            <option>Packed Food</option>
+            <option>Fruits</option>
+            <option>Vegetables</option>
+            <option>Bakery Items</option>
+        </select>
+
+        <input type="number" id="quantity"
+        placeholder="Quantity (Packets/Persons)" required>
+
+        <textarea id="address"
+        placeholder="Pickup Address"
+        rows="4" required></textarea>
+
+        <input type="date" id="date" required>
+
+        <input type="time" id="time" required>
+
+        <textarea id="notes"
+        rows="4"
+        placeholder="Additional Notes"></textarea>
+
+        <label>Upload Food Image (Optional)</label>
+
+        <input type="file"
+        id="foodImage"
+        accept="image/*">
+
+        <button type="submit">
+            Donate Now
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 FoodShare | Together We Can End Hunger</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
